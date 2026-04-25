@@ -1,0 +1,57 @@
+baseURL: "https://0823pratik.github.io/"
+languageCode: en-us
+title: "Pratik Raj"
+theme: PaperMod
+pagination: 
+  pageSize: 5
+
+params:
+  env: production
+  title: "Pratik Raj | ML Researcher"
+  description: "Undergraduate Researcher at IIT Tirupati. Working on 6G, Deep Learning, Embedded Systems & more."
+  author: "Pratik Raj"
+  defaultTheme: dark
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+
+  homeInfoParams:
+    Title: "Hey, I'm Pratik 👋"
+    Content: >
+      ML Researcher @ IIT Tirupati · Working on 6G Beam Prediction, YOLOv8, RL, 
+      Embedded Systems & Post-Quantum Cryptography.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/0823pratik"
+    - name: linkedin
+      url: "https://linkedin.com/in/YOUR_LINKEDIN"
+    - name: email
+      url: "mailto:YOUR_EMAIL@iittp.ac.in"
+
+menu:
+  main:
+    - name: "Blog"
+      url: /blog/
+      weight: 1
+    - name: "Projects"
+      url: /projects/
+      weight: 2
+    - name: "About"
+      url: /about/
+      weight: 3
+    - name: "Search"
+      url: /search/
+      weight: 4
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON   # needed for search
