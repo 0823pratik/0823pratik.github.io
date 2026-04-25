@@ -22,10 +22,10 @@ params:
   TocOpen: false
 
   homeInfoParams:
-    Title: "Hey, I'm Pratik 👋"
+    Title: "Hey, I'm Pratik"
     Content: >
-      ML Researcher @ IIT Tirupati · Working on 6G Beam Prediction, YOLOv8, RL, 
-      Embedded Systems & Post-Quantum Cryptography.
+      ML Researcher at IIT Tirupati. Working on 6G Beam Prediction, YOLOv8, 
+      Reinforcement Learning, Embedded Systems and Post-Quantum Cryptography.
 
   socialIcons:
     - name: github
