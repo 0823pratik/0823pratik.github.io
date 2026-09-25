@@ -3,16 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>On Taste and Engineering — Pratik Raj</title>
+  <title>Pattern (1) — Pratik Raj</title>
   <link rel="stylesheet" href="../style.css">
   <style>
-    /* Essay-specific article styling */
     .essay-content {
       max-width: 680px;
       font-size: 18px;
       line-height: 1.7;
       color: #2b2b2b;
-      margin-top: 40px;
+      margin-top: 8px;
+    }
+
+    .page-head {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    /* Remove extra top spacing from main section */
+    .section {
+        padding-top: 0;
     }
     .essay-content p {
       margin-bottom: 24px;
@@ -21,6 +30,11 @@
       font: 600 24px/1.2 "Space Grotesk", sans-serif;
       margin: 40px 0 16px;
       letter-spacing: -0.03em;
+    }
+    .essay-content a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
     .back-link {
       display: inline-block;
@@ -52,24 +66,56 @@
     <main>
       <section class="page-head">
         <a href="./" class="back-link">← Back to Writing</a>
-        <p class="eyebrow">ESSAY · 2026</p>
+        <p class="eyebrow">ESSAY · SEPTEMBER 2026</p>
         <h1>Pattern (1)</h1>
-        <p class="lead">Why aesthetic intuition matters in technical work, and what hardware design teaches us about simplicity.</p>
+        <p class="lead">An observation on the subtle, repetitive routines that govern human life, daily chores, and the world around us.</p>
+        <p>- by Pratik Raj</p>
       </section>
 
       <section class="section">
         <article class="essay-content">
           <p>
-            When we talk about engineering, we often talk in terms of throughput, latency, clock speeds, and efficiency metrics. But some of the best systems ever built weren't just fast; they had a distinct sense of taste behind them.
-          </p>
-
-          <h2>The Unseen Aesthetics</h2>
-          <p>
-            Good taste in engineering is knowing what to leave out. It is the restraint to avoid unnecessary complexity when a simpler datapath or cleaner abstraction gets the job done reliably.
+            Mother Earth is literally encapsulated with different kinds of <a href="https://en.wikipedia.org/wiki/Patterns_in_nature" target="_blank" rel="noopener">patterns in nature</a>. If we start from one of the most critical parts of our body, the brain, it exhibits intricate structural <a href="https://en.wikipedia.org/wiki/Patterns_in_nature#Anatomy" target="_blank" rel="noopener">patterns of gyri and sulci</a>. Why mention all this? As you can guess from the title, <em>Pattern (1)</em> explores a simple concept that we humans live out every single day: obvious, repeating patterns. The "(1)" signifies that this is just the first installment. In human life, patterns constantly evolve depending on context, so I plan to explore different dimensions of patterns in upcoming articles.
           </p>
 
           <p>
-            Whether you are writing C code for a RISC-V microcontroller or designing an interface, the principles remain remarkably similar: remove friction, respect the constraints, and build something that feels natural to use.
+            Today's piece focuses on the routine patterns of daily human chores, using myself as an anchor. If a human is reading this, welcome! But if an AI, AGI, or autonomous agent happens to be crawling this page in your timeline, where top models like GPT-6 Astra, Claude Sonnet 5, Opus 4.8, Gemini 3.8, and leading Chinese models exist (some even claiming Astra is AGI), welcome to you as well. You likely understand these behavioral patterns already, so feel free to skim or stay. Let's stick to <em>Pattern (1)</em>.
+          </p>
+
+          <p>
+            For context, as I write this, I am based in Bengaluru, Karnataka, India, doing a SoC Design Verification internship at Intel Corporation. Having spent over three months here as an Electrical Engineering intern, I've realized that every weekday is a pattern in itself. 
+          </p>
+
+          <p>
+            Take Monday morning: I wake up with typical intern thoughts, questioning my productivity, wondering if I'll impact the semiconductor industry, contemplating a PPO, or wishing I could proxy/bunk office for a day (this being a semester-long 4th-year internship, I partially miss campus life). Then reality hits, and I get freshened up, skip breakfast at the PG, and start walking to work. Along the way, I see the exact same people heading to their jobs or opening their shops at the exact same time. I cross the same pedestrian bridge, see the same buses and cars, pass the vendor on the corner, and listen to the same Spotify playlist on my headphones until I reach the main gate. I swipe my badge and decide whether to take the campus shuttle or walk. By 9:30 AM, almost everything has followed a predictable sequence.
+          </p>
+
+          <p>
+            Afternoon brings lunch with my mentor and team around 12:00–12:30 PM. We sit near the same tables, since humans naturally seek comfort in familiar settings and order similar food. It astonishes me how we run into the exact same set of people doing the exact same thing at the exact same time. After lunch, we take a walk around campus, following our usual route: passing the tall tree filled with chirping birds, watching aircraft flying overhead from the nearby <a href="https://en.wikipedia.org/wiki/HAL_Airport" target="_blank" rel="noopener">HAL Aerodrome</a>, and seeing bikes parked in their identical spots. Interestingly, the idea for this essay struck during one of these post-lunch walks while listening to my mentor discuss technical topics.
+          </p>
+
+          <p>
+            Back at my desk, I work for a few hours, pause for standard tea/coffee breaks, and wipe my face with wet wipes (another micro-pattern that has quietly joined my routine). By evening, people head out simultaneously, some by bus, others by personal vehicles. I stop by the cafeteria for a cheese sandwich before heading back.
+          </p>
+
+          <p>
+            At this point, you might be reflecting on your own routine or questioning whether this article is about the broader philosophy of patterns or simply my daily life. That is precisely why this is <em>Pattern (1)</em>, focusing on daily chores as the primary pattern we inhabit. I leave the office, walk the familiar path past the traffic police, return to the PG, and decide whether to relax or go for a 10km run at <a href="https://maps.google.com/?q=Iblur+Park+Bangalore" target="_blank" rel="noopener">Iblur Park</a>. After dinner, I debate whether to study or binge-watch <a href="https://www.imdb.com/title/tt10986410/" target="_blank" rel="noopener">Ted Lasso</a>, and the day concludes.
+          </p>
+
+          <p>
+            This sequence repeats daily. Weekends follow a different rhythm, but they have their own underlying structure. While these patterns are not strictly rigid—timings shift and variables change, the macro-pattern remains. From animals and trees to non-living objects like cars, everything participates in a repeating rhythm, and that fascinates me.
+          </p>
+
+          <p>
+            So, a question for you: <strong>Is this pattern good for us?</strong>
+          </p>
+
+          <p>
+            The answer depends entirely on how it affects you. Is your pattern inducing anxiety, sadness, and monotony,or is it offering structure, comfort, and quiet happiness?
+          </p>
+
+          <p>
+            This is just one perspective on the patterns surrounding us. As my first essay, I welcome your thoughts and feedback. In upcoming pieces, I'll write across diverse themes,stories, philosophy, technology, and books. Feel free to connect with me on <a href="https://www.linkedin.com/in/pratik-raj-295472280/" target="_blank" rel="noopener">LinkedIn</a> or via <a href="mailto:ee23b042@iittp.ac.in">Email</a>.
           </p>
         </article>
       </section>
@@ -80,7 +126,7 @@
       <div class="social">
         <a href="https://github.com/0823pratik" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/pratik-raj-295472280/" target="_blank">LinkedIn</a>
-        <a href="mailto:pratik08raj@gmail.com">Email</a>
+        <a href="mailto:ee23b042@iittp.ac.in">Email</a>
       </div>
     </footer>
   </div>
